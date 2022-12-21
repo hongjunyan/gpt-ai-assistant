@@ -3,7 +3,7 @@ import { createCompletion, FINISH_REASON_STOP, PARTICIPANT_AI } from '../service
 
 class Completion {
   constructor({ prompt, text }) {
-    this.prompt = prompt;
+    this.prompt = prompt + "\n\n###\n\n";
     this.text = text;
   }
 }
